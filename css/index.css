@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
+/* On screens that are 812px or less, set the background color to olive */
+@media screen and (max-width: 812px) {
+   .title-image p {
+    font-size: 20px !important;
+    top: 30% !important;
+    }
+}
 header .container {
     margin-bottom: 40px;
 }
@@ -8,43 +15,14 @@ body {
     background-color: black !important;
     font-family: 'Open Sans', sans-serif !important;
 }
-/* h1, h2, p, section, header, main,
-div .row {
-    background-color: black;
-} */
 
-/* div .title-image .container {
-    margin: 0 px 0px 0px 0px;
-    padding: 40px 40 px 40px 40px !important;
-} */
 
-/* .textWithImage p {
-    display: inline-block;
-}
-
-.textWithImage img {
-    height: 200 px;
-    width: 100 px;
-    vertical-align: right;
-} */
 .span4 img {
     margin-right: 10px;
 }
-.span4 .img-left {
-    float: left;
-}
-.span4 .img-right {
-    float: right;
-}
 
-footer {
-    margin: 0;
-    padding: 0;
-}
-
-
-.bg-dark {
-    background-color: black !important;
+.card col-12 col-sm-12 col-md-6 col-lg-6 text-center {
+    background: black !important;
 }
 
 .btn-primary {
@@ -79,14 +57,10 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  /* background-color:; */
   color: white;
   font-size: 16px;
   font-weight: bold;
   padding: 8px 20px;
-  /* border: none; */
-  /* cursor: pointer; */
-  /* border-radius: 5px; */
   border-color: white;
 }
 
@@ -94,11 +68,17 @@ footer {
   position: absolute;
   color: white;
   font-size: 30px;
-  /* font-weight: bold; */
   top: 60%;
   left: 50%;
   text-align: center;
   transform: translate( -50%, -50% );
+}
+
+.card {
+    background: black !important;
+    color: white;
+    font-size: 22px;
+    line-height: 250%;
 }
 
 .title-image .btn:hover {
@@ -106,3 +86,49 @@ footer {
   color: rgba(200,200,200,200);
   border-color: rgba(200,200,200,200);
 }
+
+.btn-primary.focus,
+.btn-primary:focus {
+    background: black;
+    border-color: black;
+    box-shadow: 0 0 0 0rem;
+}
+
+
+.bg-dark {
+    background: black;
+}
+
+span.btn.btn-fb {
+    background: black !important;
+    border-color: black;
+    color: blue;
+}
+span.btn.btn-ins {
+    background: black !important;
+    border-color: black;
+    color: red;
+}
+
+span.btn.fetch-quote {
+    color: goldenrod;
+}
+
+span.quote {
+    font-style: italic;
+}
+span.author {
+    font-style: italic;
+}
+
+span.btn.btn-fb:hover {
+    border-color: black !important;
+    font-weight: bold !important;
+    box-shadow: 0 0 0 0rem;
+}
+
+footer {
+    margin: 15px;
+    padding: 15px;
+}
+
